@@ -1,0 +1,73 @@
+.clearfix::after{
+    clear: both;
+    content: "";
+    display: block;
+  }
+  
+
+.img-thumbnail{
+    border: none;
+    margin: 5px 0;
+}
+
+.navbar{
+    font-size: 20px;
+}
+
+.myproperties{
+    padding: 0 5px;
+}
+
+.img{
+    position: relative;
+}
+
+.mephoto{
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 100px;
+}
+
+.myfade {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+  opacity: 0;
+  /* background: rgba(255, 255, 255, 70) */
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>'; /* add a character to press for next slide*/
+  font-size: 40px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';  /* add a character to press for next slide*/
+  font-size: 40px;
+  color: black;
+}
+
+.carousel-control-next-icon:hover{
+    opacity: 1;
+}
+
+.carousel-control-prev-icon:hover{
+    opacity: 1;
+}
+
+.myfade:hover {
+    opacity: 0.5;
+}
