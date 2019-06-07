@@ -20,6 +20,7 @@
 
 .img{
     position: relative;
+    
 }
 
 .mephoto{
@@ -48,9 +49,9 @@
 }
 
 
-/* =================== CSS HOVER EFFECTS START ==================== */
+/* ==================================== CSS HOVER EFFECTS START ========================================= */
 .grid{
-    padding: 20px 20px 100px 20px;
+    padding: 0;
     max-width: 1300px;
     margin: 0 auto;
     list-style: none;
@@ -58,10 +59,10 @@
 }
 
 .grid li{
-    display: inline-block;
-    width: 440px;
+    /* display: inline-block; */
+    width: auto;
     margin: 0;
-    padding: 20px;
+    padding: 5px;
     text-align: left;
     position: relative;
 }
@@ -82,14 +83,17 @@
     top: 0;
     left: 0;
     padding: 20px;
-    background: #2c3f52;
-    color: #ed4e6e;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    /* border-radius: 2%; */
 }
 
 .grid figcaption h3{
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: rgb(0, 0, 0);
+    /* background: rgb(126, 126, 126); */
+    /* border-radius: 10px; */
 }
 
 .grid figcaption span:before{
@@ -101,8 +105,9 @@
     padding: 5px 10px;
     border-radius:2px;
     display: inline-block;
-    background: #ed4e6e;
-    color: #fff;
+    /* background: #ed4e6e; */
+    font-size: 30px;
+    color: #000;
 }
 
 /* EFFECT 1: CAPTION OFFSET ON HOVER*/
@@ -117,7 +122,7 @@
 
 .no-touch .cs-style-1 figure:hover figcaption, .cs-style-1 figure.cs-hover figcaption{
     opacity: 1;
-    transform: translate(15px, 15px);
+    /* transform: translate(15px, 15px); */
 }
 
 .cs-style-1 figcaption h3{
@@ -132,7 +137,7 @@
     margin-top: 30px;
 }
 
-/* ================ CSS HOVER EFFECTS END ===================== */
+/* ====================================== CSS HOVER EFFECTS END =================================== */
 
 
 

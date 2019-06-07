@@ -3,7 +3,16 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">  -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" /> -->
+    <script src="assets/javascript/modernizr.custom.js"></script>
 
     <script src="https://kit.fontawesome.com/a7db5df4d1.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -64,7 +73,7 @@
     <div class="container">
         <div class="row" id="fotos">
             <div class="col-md">
-                <h1 class="display-4">fotos</h1>
+                <h1 class="display-4">featured</h1>
             </div>
 
         </div>
@@ -73,39 +82,67 @@
         <div class="row">
 
             <!-- -FIRST IMAGE COLUMN- -->
-            <div class="col-md myproperties">
+            <div class="col-md-3 myproperties">
                 <ul class="grid cs-style-1">
 
-                    <li>
-                        <figure>
-                            <!-- <div class="img"> -->
-                                <img class="img-thumbnail myfade" src="assets/images/SquawMountain-Spring2019.jpg" />
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
                                 <figcaption>
                                     <h3>Sunset at Squaw Mountain</h3>
                                     <span>Daniel Garcia</span>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>IG
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
                                 </figcaption>
-                            <!-- </div> -->
-                        </figure>
-                    </li>
-
-                    <div class="img">
-                        <a href="#">
-                            <img class="img-thumbnail myfade" src="assets/images/SquawMountain-Spring2019-2.jpg" />
-                        </a>
+                            </figure>
+                        </li>
                     </div>
 
                     <div class="img">
-                        <a href="#">
-                            <img class="img-thumbnail myfade" src="assets/images/SquawMountain - Spring2019.jpg" />
-                        </a>
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
                     </div>
 
                     <div class="img">
-                        <a href="#">
-                            <img class="img-thumbnail myfade"
-                                src="https://images.unsplash.com/photo-1559562622-f830b488f4a8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80" />
-                        </a>
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
                     </div>
 
                 </ul>
@@ -115,55 +152,133 @@
 
             <!-- -SECOND/WIDEST IMAGE COLUMN- -->
             <div class="col-md-5 myproperties">
-                <div class="img">
-                    <a href="#">
-                        <img class="img-thumbnail myfade" src="assets/images/rmnp_whiteout.jpg" />
-                    </a>
-                </div>
-                <div class="img">
-                    <a href="#">
-                        <img class="img-thumbnail myfade" src="assets/images/rmnp_east1.jpg" />
-                    </a>
-                </div>
-                <div class="img">
-                    <a href="#">
-                        <img class="img-thumbnail myfade"
-                            src="https://images.unsplash.com/photo-1559595132-08b6515761d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" />
-                    </a>
-                </div>
+                <ul class="grid cs-style-1">
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                </ul>
 
             </div>
 
 
             <!-- -THIRD IMAGE COLUMN- -->
             <div class="col-md myproperties">
-                <div class="img">
-                    <a href="#">
-                        <img class="img-thumbnail myfade" src="assets/images/RMNP_West - Spring2019.jpg" />
-                    </a>
-                </div>
-                <div class="img">
-                    <a href="#">
+                <ul class="grid cs-style-1">
 
-                        <img class="img-thumbnail myfade" src="assets/images/echoLake.jpg" />
-                    </a>
-                </div>
-                <div class="img">
-                    <a href="#">
-                        <img class="img-thumbnail myfade" src="assets/images/rmnp_east2.jpg" />
-                    </a>
-                </div>
-                <div class="img">
-                    <a href="#">
-                        <img class="img-thumbnail myfade" src="assets/images/mtEvansLoop.jpg" />
-                    </a>
-                </div>
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                    <div class="img">
+                        <li>
+                            <figure>
+                                <img class="img-thumbnail myfade"
+                                    src="https://images.unsplash.com/photo-1559782035-2646076bc1f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" />
+                                <figcaption>
+                                    <h3>Sunset at Squaw Mountain</h3>
+                                    <span>Daniel Garcia</span>
+                                    <a href="https://www.instagram.com/dan.grcia/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </div>
+
+                </ul>
 
             </div>
 
         </div>
 
-        <!-- ROW AND FULL WIDTH COLUMN CONTAINING JUMBOTRON WITH ABOUT INFO -->
+    </div>
+
+
+    <!-- ================ FLUID CONTAINER ENCAPSULATING JUMBOTRON WITH ABOUT INFO ======================= -->
+    <div class="container-fluid">
         <div class="row" id="jabout">
             <div class="col-md myproperties">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -187,12 +302,12 @@
                                             class="fab fa-instagram"></a></i> IG</p>
                             </div>
                             <!-- <img class="d-block w-100"
-                                src="https://images.unsplash.com/photo-1496016943515-7d33598c11e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
-                                alt="First slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Image Title</h5>
-                                <p>Description</p>
-                            </div> -->
+                                    src="https://images.unsplash.com/photo-1496016943515-7d33598c11e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80"
+                                    alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Image Title</h5>
+                                    <p>Description</p>
+                                </div> -->
                         </div>
                         <div class="carousel-item">
                             <div class="jumbotron bg-white">
@@ -204,12 +319,12 @@
                                     larger container.</p>
                             </div>
                             <!-- <img class="d-block w-100"
-                                src="https://images.unsplash.com/photo-1494607239400-ff147da48308?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2241&q=80"
-                                alt="Second slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Image Title</h5>
-                                <p>Description</p>
-                            </div> -->
+                                    src="https://images.unsplash.com/photo-1494607239400-ff147da48308?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2241&q=80"
+                                    alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Image Title</h5>
+                                    <p>Description</p>
+                                </div> -->
                         </div>
                         <div class="carousel-item">
                             <div class="jumbotron bg-white">
@@ -221,12 +336,12 @@
                                     larger container.</p>
                             </div>
                             <!-- <img class="d-block w-100"
-                                src="https://images.unsplash.com/photo-1514439827219-9137a0b99245?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
-                                alt="Third slide">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Image Title</h5>
-                                <p>Description</p>
-                            </div> -->
+                                    src="https://images.unsplash.com/photo-1514439827219-9137a0b99245?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+                                    alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Image Title</h5>
+                                    <p>Description</p>
+                                </div> -->
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -240,14 +355,19 @@
                 </div>
             </div>
         </div>
+    </div>
 
 
+
+
+    <div class="container">
         <div class="row" id="dynamicImages">
 
         </div>
-
     </div>
 
+
+    <!-- ============================== FOOTER ============================ -->
 
     <div class="container-fluid bg-dark text-center footer">
         <div class="row">
