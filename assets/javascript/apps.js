@@ -56,6 +56,7 @@ displayImages();
 
 
 
+
 $(".img").click(function () {
     alert("click");
 });
