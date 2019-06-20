@@ -48,6 +48,12 @@
   /* background: rgba(255, 255, 255, 70) */
 }
 
+.card{
+    margin: 40px 20px;
+    border: none;
+    float: left;
+}
+
 
 /* ==================================== CSS HOVER EFFECTS START ========================================= */
 .grid{
@@ -83,7 +89,7 @@
     top: 0;
     left: 0;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.7);
     color: #000;
     /* border-radius: 2%; */
 }
@@ -138,8 +144,6 @@
 }
 
 /* ====================================== CSS HOVER EFFECTS END =================================== */
-
-
 
 .carousel-control-next-icon:after
 {
