@@ -54,6 +54,24 @@
     float: left;
 }
 
+.jright{
+    margin-left: 200px;
+}
+
+.project-cards{
+    border-left: 2px solid white;
+}
+
+/* h3{
+    font-weight: 500;
+    font-size: 18px;
+} */
+
+
+
+
+
+
 
 /* ==================================== CSS HOVER EFFECTS START ========================================= */
 .grid{

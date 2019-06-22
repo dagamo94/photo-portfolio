@@ -7,25 +7,23 @@ var imagesArray = ["https://images.unsplash.com/photo-1558981408-db0ecd8a1ee4?ix
 console.log(imagesArray);
 
 
-function displayImages() {
+function displayImages(arr, colNum) {
     var dynamicIndex = 0;
-    var arrLength = imagesArray.length;
+    var arrLength = arr.length;
 
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < colNum; i++) {
         var columns = $("<div>");
-        columns.addClass("col-md-4 myproperties");
+        columns.addClass(`col-md-${Math.floor(12/colNum)} myproperties`);
         columns.attr("id", "mycolumn" + i);
 
         $("#dynamicImages").append(columns);
-        console.log("first loop no if");
-        console.log(arrLength);
 
-        if (arrLength % 3 > 1) {
+        if (arrLength % colNum > 1) {
             arrLength++;
         }
-        console.log("first loop after if");
+        console.log("Outer for loop after if");
 
-        for (var j = 0; j < arrLength / 3; j++) {
+        for (var j = 0; j < arrLength / colNum; j++) {
             var imagesDiv = $("<div>");
             imagesDiv.addClass("mycustomimg");
             imagesDiv.attr("data-value", j);
@@ -34,11 +32,10 @@ function displayImages() {
             myImageTag.addClass("img-thumbnail myfade");
             myImageTag.attr("src", "#");
             myImageTag.attr("alt", "an image");
-            // var imageTag = "testing loops"
 
-            $(imagesDiv).append("<a href='#' class='imagelink'><img class='img-thumbnail myfade' src='" + imagesArray[dynamicIndex] + "'/></a>");
-            // $(".imagelink").append("test");
-            if (imagesArray[dynamicIndex] === undefined) {
+            $(imagesDiv).append("<a href='#' class='imagelink'><img class='img-thumbnail myfade' src='" + arr[dynamicIndex] + "'/></a>");
+            
+            if (arr[dynamicIndex] === undefined) {
                 return false;
             }
             dynamicIndex++;
@@ -50,7 +47,7 @@ function displayImages() {
     }
 }
 
-displayImages();
+displayImages(imagesArray, 4);
 
 // DYNAMIC SCROLLING
 
