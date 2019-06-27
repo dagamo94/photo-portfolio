@@ -34,7 +34,7 @@ function displayImages(arr, colNum) {
             myImageTag.attr("alt", "an image");
 
             $(imagesDiv).append("<a href='#' class='imagelink'><img class='img-thumbnail myfade' src='" + arr[dynamicIndex] + "'/></a>");
-            
+
             if (arr[dynamicIndex] === undefined) {
                 return false;
             }
@@ -47,7 +47,7 @@ function displayImages(arr, colNum) {
     }
 }
 
-displayImages(imagesArray, 4);
+// displayImages(imagesArray, 4);
 
 // DYNAMIC SCROLLING
 
